@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kioja.com.musv" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="kioja.com.musv.MusvAplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PrincipalActivity"
+            android:label="PrincipalActivity" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name=".PerfilActivity"
+            android:label="PerfilActivity" >
+        </activity>
+        <activity
+            android:name=".PesquisaActivity"
+            android:label="PesquisaActivity" >
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:label="CadastroActivity" >
+        </activity>
+        <activity
+            android:name=".EventoActivity"
+            android:label="EventoActivity" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".PostagemActivity"
+            android:label="@string/title_activity_postagem" >
+        </activity>
+        <activity
+            android:name=".ResultadoPesquisaActivity"
+            android:label="Pesquisa" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,298 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="kioja.com.musv.CadastroActivity">
+
+    <ScrollView
+        android:id="@+id/parentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/child"
+            android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Cadastre seu Perfil" />
+
+
+            <TextView
+                android:id="@+id/textViewIm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Selecione uma imagem de Perfil:" />
+
+
+            <ImageView
+                android:id="@+id/imagemPerfil"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="130dp"
+                android:src="@drawable/profile"
+                 />
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Informe seu nome de trabalho:" />
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+
+                android:textAlignment="gravity" />
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+
+
+            android:layout_marginTop="20dp"
+            android:text="Você é um:" />
+
+        <RelativeLayout
+            android:id="@+id/layout_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPerfil"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioArtista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:focusable="true"
+                    android:focusableInTouchMode="true"
+
+                    android:text="Artista/Banda" />
+
+                <RadioButton
+                    android:id="@+id/radioProdutor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-33dp"
+
+                    android:text="Produtor de Shows" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+
+
+                android:layout_marginTop="10dp"
+                android:text="Seu foco musical é:" />
+
+            <RelativeLayout
+                android:id="@+id/layout_group2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupAutoral"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioAutoral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+
+                        android:text="Autoral" />
+
+                    <RadioButton
+                        android:id="@+id/radioCover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-33dp"
+
+                        android:text="Cover" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:text="Descreva um (ou mais) estilos musicais que trabalha:" />
+
+
+        <EditText
+            android:id="@+id/editTextEstilos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:hint="Ex: Rock Hard Rock Heavy Metal"
+            android:textAlignment="gravity" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:text="Seu Estado" />
+
+        <EditText
+
+            android:id="@+id/editTextEstado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:hint="Ex: Minas Gerais - MG"
+            android:textAlignment="inherit" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Sua Cidade" />
+
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Fale brevemente sobre você (Biografia)" />
+
+
+        <EditText
+            android:id="@+id/editTextBiografia"
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+            android:ems="10"
+
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Informe uma forma de contato: (E-mail, whatsapp, facebook, etc) " />
+
+
+        <EditText
+            android:id="@+id/editTextContato"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:text="Informe um site com seu conteúdo: (Youtube, soundcloud, bandcamp, etc) " />
+
+
+        <EditText
+            android:id="@+id/editTextMusica"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="" />
+
+
+        <ImageView
+            android:id="@+id/buttonConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/confirm" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

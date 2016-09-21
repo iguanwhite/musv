@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="kioja.com.musv.PerfilActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Imagem -->
+        <ImageView
+            android:id="@+id/fotoImageView"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/m3" />
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fotoImageView"
+            android:textColor="#000000"
+            android:text="Bruno Rodrigo" />
+
+        <TextView
+            android:id="@+id/textPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/fotoImageView"
+            android:layout_below="@+id/textNome"
+            android:text="Músico" />
+
+        <TextView
+            android:id="@+id/textPreferencia"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textPerfil"
+            android:layout_below="@+id/textNome"
+           android:text="Autoral" />
+
+
+        <TextView
+            android:id="@+id/textEstilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/fotoImageView"
+            android:layout_below="@+id/textPreferencia"
+
+            android:text="MPB" />
+
+        <TextView
+            android:id="@+id/textLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/fotoImageView"
+            android:layout_below="@+id/textEstilo"
+            android:text="Rio de Janeiro - RJ" />
+
+
+
+        <Button
+            android:id="@+id/seguirBtn"
+            android:layout_width="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/fotoImageView"
+            android:layout_below="@+id/textLocal"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Seguir" />
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_below="@+id/fotoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="300dp"
+
+
+            >
+
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
